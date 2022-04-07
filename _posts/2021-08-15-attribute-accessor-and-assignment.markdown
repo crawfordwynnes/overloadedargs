@@ -1,3 +1,9 @@
+---
+layout: post
+title:  Attribute Accessor and Assignment"
+date:   2022-08-15 14:08:08 +0100
+categories: jekyll update
+---
 This post is a super simple post for complete Ruby newbies with some interesting thoughts about OOP. It should be suitable to anyone who is interested in OOP.
 
 The most important thing with OOP in my opinion is encapsulation. It gives each object access to only the methods which should be acted on. When we think about the L in SOLID as Liskov Substitution Principle, we can see that encapsulation and pure OOP and substitution do not necessarily go hand in hand. I will give an example below with reference to the Ruby newbie attr_accessor etc.
