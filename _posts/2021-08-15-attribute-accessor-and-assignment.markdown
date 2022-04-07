@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Attribute Accessor and Assignment"
-date:   2022-08-15 11:08:08 +0100
+date:   2021-08-15 11:08:08 +0100
 categories: jekyll update
 ---
 This post is a super simple post for complete Ruby newbies with some interesting thoughts about OOP. It should be suitable to anyone who is interested in OOP.

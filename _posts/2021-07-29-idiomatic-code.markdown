@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Idiomatic Code"
-date:   2022-08-15 18:08:08 +0100
+date:   2021-08-15 18:08:08 +0100
 categories: jekyll update
 ---
 {% highlight ruby %}
