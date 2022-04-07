@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attribute Accessor and Assignment"
+title:  "Attribute Accessor and Assignment"
 date:   2022-08-15 14:08:08 +0100
 categories: jekyll update
 ---
