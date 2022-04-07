@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Kotlin on the block"
+title:  "Kotlin On The Block"
 date:   2022-02-22 14:08:08 +0100
 categories: jekyll update
 ---

@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  "Idiomatic code"
+title:  "Idiomatic Code"
 date:   2022-08-15 14:08:08 +0100
 categories: jekyll update
 ---
+{% highlight ruby %}
 ||= []
+{% endhighlight %}
 
 Sometimes whilst writing Ruby code we have to use a pattern that is repeated a lot when building arrays. Idiomatic code to achieve this looks like this:
 
