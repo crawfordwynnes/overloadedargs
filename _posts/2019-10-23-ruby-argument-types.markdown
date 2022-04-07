@@ -136,7 +136,7 @@ so calling foo(nil) will result in "value".
 
 If you used default arguments and passed in nil you would get nil so the behaviour is slightly different. It can be useful for when you use ARGV to grab input.
 
-As a side note ||= is sometimes used for caching values instead of control flow which apparently could be more akin to Perl.
+As a side note {% highlight ruby %} ||= {% endhighlight %} is sometimes used for caching values instead of control flow which apparently could be more akin to Perl.
 
 Boolean Methods
 
