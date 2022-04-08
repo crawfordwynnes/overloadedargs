@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Golang 1.9"
+date:   2017-12-05 10:04:08 +0100
+categories: jekyll update
+---
+Some steps for installing Golang in Ubuntu
+
+After you:
+
+```console
+sudo add-apt-repository ppa:gophers/archive
+sudo apt-update
+sudo apt-get install golang-1.9-go
+```
+
+then you can add this to your ~/.bashrc, ~/.zshrc
+
+```console
+export GOPATH=$HOME/go
+export PATH=$PATH:/usr/lib/go-1.9/bin
+```
+
+Assuming that you had port 11371 open which can easily be forgotten with automatic strong firewalls.
+
+Remember to reload your shell by opening and closing or by running
+source ~/.zshrc

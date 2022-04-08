@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "On Pair Programming"
+date:   2017-12-18 10:04:08 +0100
+categories: jekyll update
+---
+A little bit of history on loops with reference to Go and Java:
+
+The Do While loop is a completely different thing than the While loop, however the Go language only supports the for loop syntactically. We can quite easily generate the other types of loops. 
+
+Loops can have conditions that execute at the beginning, middle and end. Loops in general can also have predecrement and postdecrements which you can see in Java's ++i and i++. 
+
+In the Go language we can generalize to only three types of loops. The for loop with a condition, the for loop with a condition and increment and the for loop with a break, these are while, for and do while respectively.
+
+In this post it should also be mentioned that programs in general can be written completely without loops and only if statements. Writing programs without loops is one of the most simple compiler optimisations; loop unravelling. Writing programs without if statements is usually reserved for programs which want to achieve a level of maintainable functional style.
+
+One way can be achieved is by replacing if statements with Objects that send messages whenever they need to alter state. There is a campaign for the anti-if movement but it should only be used when practical. Replacing if statements has lead to programs which look like they have room to grow whilst not violating the single responsibility principle, almost in a skeleton program style.
+Here is JavaScripts for in and for of loops and different ways to use them with Objects because you will find a for of loop will throw a not iterable exception if called without a function like Object.keys.
+
+{% highlight javascript %}
+var numbers = [1,2,3];
+
+var obj = {x: 1, y: 2, z: 3}
+
+for (let number of Object.keys(obj)) {
+  console.log(number);
+}
+
+for (let number of Object.entries(obj)) {
+  console.log(number);
+}
+
+for (let number in obj) {
+  console.log(number + ' ' +  obj[number]);
+}
+
+for (let number of numbers) {
+  console.log(number);
+}
+
+for (let [key, value] of Object.entries(obj)) {
+  console.log(`${key}: ${value}`);
+}
+{% endhighlight %}

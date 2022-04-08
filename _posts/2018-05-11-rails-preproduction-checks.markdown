@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Rails preproduction Checks"
+title:  "Rails Preproduction Checks"
 date:   2019-05-11 18:04:08 +0100
 categories: jekyll update
 ---
