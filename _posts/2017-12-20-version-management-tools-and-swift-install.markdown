@@ -12,12 +12,11 @@ Using the swift versions manager swiftenv is a little trickier, here are some in
 
 ```console
 sudo apt-get install clang libicu-dev git cmake ninja-build
+```
 
-
-Install switfenv 
+## Install switfenv 
+```console
 mkdir .swiftenv
-
-
 
 git clone https://github.com/kylef/swiftenv ~/.swiftenv 
 
@@ -28,19 +27,27 @@ echo 'export PATH="$SWIFTENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(swiftenv init -)"' >> ~/.bashrh
 ```
 
+## Install Swift 4
 
-Install Swift 4
+Instructions for other versions:
+https://github.com/kylef/swiftenv/blob/master/docs/commands.md
 
-Instructions for other versions: 
-```console
-https://github.com/kylef/swiftenv/blob/master/docs/commands.md 
 You may need other dependencies like:
+
+```console
 python uuid-dev libicu-dev icu-devtools libbsd-dev libedit-dev libxml2-dev 
 libsqlite3-dev swig libpython-dev libncurses5-dev pkg-config lldb-4.0 llvm
 cmark, llbuild
+```
+
+### Install Swift with Switfenv
+
+```console
 swiftenv install --verbose 4.0
+```
 or 
 
+```console
 swiftenv install https://swift.org/builds/swift-4.0.3-release/ubuntu1604/
 swift-4.0.3-RELEASE/swift-3.0.1-RELEASE-ubuntu16.04.tar.gz
 ```

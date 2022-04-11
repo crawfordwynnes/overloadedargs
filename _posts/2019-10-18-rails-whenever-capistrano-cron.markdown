@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Rails Whenever, Capistrano & Cron"
+title:  "Rails, Whenever, Capistrano & Cron"
 date:   2019-10-18 14:30:08 +0100
 categories: jekyll update
 ---

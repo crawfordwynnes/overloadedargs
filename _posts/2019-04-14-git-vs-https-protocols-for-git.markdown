@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Git vs Https protocols for deploying where Git protocol is blocked because of port"
+title:  "Git vs Https Protocols For Deploying Where Git Protocol Is Blocked Because Of Port"
 date:   2019-04-14 14:30:08 +0100
 categories: jekyll update
 ---
