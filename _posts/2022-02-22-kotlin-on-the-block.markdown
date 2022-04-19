@@ -15,7 +15,7 @@ int[] num[] = new int[10][10]; and
 int[][] num={ {1,2}, {1,2}, {1,2}, {1,2}, {1,2} }; 
 {% endhighlight %}
 
-Kotlin feels a little light on the ground for documentation about using the language online even though it's more than a brand new language now, but there are new projects being developed and you can publish your projects straight to the maven repository. With new Github workflows I think it will be easy to build custom workflows to process data more easily than just having CI, which in the past was more limited to writing custom bash scripts and piping the data around to new scripts.
+Kotlin feels a little light on the ground for documentation about using the language online even though it's more than a brand new language now, but there are new projects being developed and you can publish your projects straight to the maven repository. With new Github workflows I think it will be easy to build custom workflows to process data more easily which will be used for more applications than just having CI, which in the past was more limited to writing custom bash scripts and piping the data around to new scripts.
 
 Anyway the best tutorial for Kotlin looks like it's at https://www.programiz.com/kotlin-programming/
 The main language site is also very easy to use and has tons of information, and there are a few books out.
