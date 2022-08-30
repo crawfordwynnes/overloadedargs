@@ -4,7 +4,6 @@ title:  "Exponential Backoff in Ruby"
 date:   2022-04-19 12:04:08 +0100
 categories: jekyll update
 ---
-## Exponential Backoff in Ruby
 
 This is a really quick post about the importance of exponential backoff and retry loop. In Ruby sometimes we want to use exception handling to make our programs handle errors more gracefully. Usually if we start catching exceptions or creating specific exception classes then overall our strategy of programming tends to be more defensive. Whereas if we decide not to handle exceptions or cover edge cases then our programs tend to be more offensive; no-one actually calls their programs more offensive, they usually only say if a program is defensive but ft it’s less defensive the it reduces the cyclomatic complexity and increases the ability for the code to be changed later on. It shouldn’t be confused with offensive or defensive cyber security in programming although there is a concept of code that is secure by design and code that handles exceptions lends itself well to producing error free code. The best Ruby book on exception handling is called Exceptional Ruby by Avdi Grimm.
 

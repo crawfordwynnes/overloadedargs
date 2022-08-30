@@ -8,7 +8,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.9.0"
+gem "jekyll", "~> 4.2.2"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "jekyll-swiss"
@@ -28,12 +28,5 @@ install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do
   gem "tzinfo", "~> 1.2"
   gem "tzinfo-data"
 end
-
-# Performance-booster for watching directories on Windows
-gem "wdm", "~> 0.1.0", :install_if => Gem.win_platform?
-
-# kramdown v2 ships without the gfm parser by default. If you're using
-# kramdown v1, comment out this line.
-gem "kramdown-parser-gfm"
 
 gem 'webrick'
