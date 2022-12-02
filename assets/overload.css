@@ -12,5 +12,9 @@ h1,
 }
 
 code {
-  color: #39ec54;
+  color: #0093ff;
+}
+
+.highlight {
+  background-color: #eaeaea
 }
