@@ -52,4 +52,5 @@ There is also the pin operator which looks similar to the logical operator for n
 You can also use the splat operator for variable array length in the pattern. The thing that's not immediately clear when using 'case in' is that it can be combined with an if statement. If you've tried to convert a 'case, when' to a 'case, in' then you may have to add the extra conditionals which is really not what you want to do. To get your head around it a bit more try to remember that a 'case, in' is for matching expressions not variables.
 
 Here is Yukihiro Matsumoto announcing pattern matching at RubyConf 2019.
-https://www.youtube.com/watch?v=2g9R7PUCEXo
+
+[Pattern Matching](https://www.youtube.com/watch?v=2g9R7PUCEXo)
