@@ -17,9 +17,7 @@ case data_structure
 end
 {% endhighlight %}
 
-You will notice that it matches at the in-expression. If you wrote this as a case when it would only evaluate when there was equality instead of matching patterns.
-
-You can match on types for example and these will evaluate to true. New things that were added to pattern matching in 3.1 include using the pipe symbol | to match multiple expressions, assigning matches to a variable with => x and ignoring values in a pattern like
+You will notice that it matches at the in expression. If you wrote this as a case when it would only evaluate when there was equality instead of matching patterns. You can match on types for example and these will evaluate to true. New things that were added to pattern matching in 3.1 include using the pipe \| symbol to match multiple expressions, assigning matches to a variable with => x and ignoring values in a pattern like:
 
 {% highlight ruby %}
   case [1, 2, 3]
