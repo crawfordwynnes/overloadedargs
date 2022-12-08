@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 There are several features of Ruby which take a bit of getting used to as the syntax for them isn't immediately clear what they do. Some of these are explained here including what they do and how to use them.
 
-Default Args
+### Default Args
 
 Ruby takes arguments as default when declared in parameters, so when the method is invoked if the parameter is not passed in then it is assigned to a variable.
 
@@ -19,7 +19,7 @@ end
 
 if you call foo without an argument it will return 3.
 
-Optional args
+### Optional args
 
 Arguments can be optional if you use default arguments with nil as a value in the parameter.
 
@@ -34,7 +34,7 @@ end
 
 There is an order where normal arguments are defined first.
 
-Star args
+### Star args
 
 Ruby can take a list of args and expand them to an array for you if you declare the parameter with a *. This should not be confused with pointers in C.
 
@@ -48,7 +48,7 @@ end
 
 foo 1, 2, 3 will print [1, 2, 3]
 
-Double star args
+### Double star args
 
 You can give a list of key values and have them combined into a hash with ** before the parameter name.
 
@@ -84,7 +84,7 @@ returns:
 { hello: world }
 {% endhighlight %}
 
-Keyword arguments
+### Keyword arguments
 
 Keyword arguments are a new feature for Ruby 2.0 and allow you to set default arguments in the definition and can be called with a keyword
 
@@ -118,7 +118,7 @@ will return
 
 This pattern is sometimes seen in Ruby elsewhere where you can assign an empty array in a block to make code more terse.
 
-Conditional Assigment
+### Conditional Assigment
 
 When being flexible with arguments you can also use conditional assignment if the variable is nil.
 
@@ -132,13 +132,13 @@ end
 
 which will allow you to have an optional default argument where you overwrite nil if it's passed in.
 
-so calling foo(nil) will result in "value".
+Calling foo(nil) will result in "value".
 
 If you used default arguments and passed in nil you would get nil so the behaviour is slightly different. It can be useful for when you use ARGV to grab input.
 
 As a side note {% highlight ruby %} ||= {% endhighlight %} is sometimes used for caching values instead of control flow which apparently could be more akin to Perl.
 
-Boolean Methods
+### Boolean Methods
 
 Boolean methods are really simple and are more of a convention. If you intend your method to return true or false then you should add a ? at the end of your method.
 
@@ -152,7 +152,7 @@ end
 
 There are extra rules for Objects that are Truthy of Falsy when doing things like calling nil? on nil. In different programming languages values can be truthy or falsy. A way to think about it is if values like nil or 0 satisfy the expression of equality with true then they are truthy. This get's more confusing when you think about multiple expressions of equality. For example in JavaScript, built into the language you can use == and === to try and compare objects and values the that object provides. A way to think about this is with geometry. A square is equal to a square but not equal to a square with a different area.
 
-Destructive Methods
+### Destructive Methods
 
 Destructive methods are also a convention and signify that if the method modifies the underling data then it should be denoted with an explanation mark ! at the end of the method.
 
@@ -175,7 +175,7 @@ All Ruby's methods from the Enumerable class are non-destructive by design. The 
 
 https://launchschool.com/blog/mutating-and-non-mutating-methods
 
-Method missing
+### Method Missing
 
 Method missing is more of a feature of Ruby and something you can use as a pattern to help you. If you are starting off in Ruby you should try and learn this early on, however getting it rite can be hard because of some other tacets that you need to take into consideration.
 
@@ -183,7 +183,7 @@ If you call a method that doesn't exist on a class you get a method_missing erro
 
 The gotcha's here are that you should override respond_to_missing?
 
-Explicit Return
+### Explicit Return
 
 Explicit return is something pretty simple, it just means that you can use the return keyword instead of letting Ruby return the last value in the buffer of the method. e.g. this is explicit return.
 
@@ -195,7 +195,7 @@ end
 
 vs
 
-implicit return:
+### Implicit Return:
 
 {% highlight ruby %}
 def world
@@ -203,12 +203,11 @@ def world
 end
 {% endhighlight %}
 
-Explicitly passing blocks
+### Explicitly Passing Blocks
 
 Blocks can be passed to methods by using the & character and we can use call on the block to execute the block.
 
 e.g.
-
 
 {% highlight ruby %}
 def foo(&block)

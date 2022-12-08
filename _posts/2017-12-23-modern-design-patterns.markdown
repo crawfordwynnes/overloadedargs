@@ -8,9 +8,9 @@ The original Gang Of Four, Design Patterns was released in 1994 and it paved the
 
 ## Decorator
 
-Specifically used in Rails to simplify Logic between the Controller and View layers. They can help pass complex objects to the view layers so that there is minimal logic in the views or controllers, the kind of code you may see include wrappers or replacements for helpers that can change the formatting of data ready for display, such as I18N (internationalization) helpers. In an abstract form they may be described as one of th V's in MVVC or very loosely part of template engines.
+Specifically used in Rails to simplify Logic between the Controller and View layers. They can help pass complex objects to the view layers so that there is minimal logic in the views or controllers, the kind of code you may see include wrappers or replacements for helpers that can change the formatting of data ready for display, such as I18N \(internationalization\) helpers. In an abstract form they may be described as one of th V's in MVVC or very loosely part of template engines.
 
-## Proxy
+## Proxy
 
 This pattern is everywhere and is specifically relevant to web servers. Considering that modern web servers will run in parallel with multiple processes that proxy to another web server it is quite easy to see that the pattern finds it way growing into normal classes for development with classes that can call methods without all of the required data. Specifically for example a Proxy for a Car Object could be a Car Runner Object where the Car Runner object receives calls for the Car Object and then decides to send method calls to the Car using some of the data or transformed data. ActiveRecord in Rails has a proxy instance that allows us to do method chaining, which is the one that is interacted with.
 
