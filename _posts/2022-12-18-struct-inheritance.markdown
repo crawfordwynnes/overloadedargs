@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Struct Inheritance"
-date:   2022-12-18 21:45:00 +0000
+date:   2022-12-18 11:45:00 +0000
 categories: jekyll update
 ---
 
