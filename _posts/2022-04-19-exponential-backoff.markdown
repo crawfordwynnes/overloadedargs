@@ -16,7 +16,7 @@ Let's give an example with a symbols are faster than strings and ternary if:
 {% highlight ruby %}
 
 begin 
-  method_which_can raise Exception
+  method_which_can { raise Exception }
 rescue Exception
   timeout(:exponential) ? retry : timer_then_retry
 end
