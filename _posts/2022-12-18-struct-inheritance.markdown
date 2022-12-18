@@ -40,4 +40,4 @@ Stat.new(Time.now, :warn_log).fullstat
 
 Your not supposed to inherit from this class and it's meant to be lightweight. If you wan't something with more flexibility then you can use OpenStruct by requiring 'ostruct' which will return an instantiated object.
 
-Normal instantiated structs can be compared and also get enumrable methods on them.
+Normal instantiated structs can be compared and also get enumerable methods on them.
