@@ -34,7 +34,7 @@ Then you can use it in exactly the same way, it's probably a preference thing bu
 
 It can also help you understand a bit more about how Ruby works, it turns out that each class has an Eigenclass, which stores instance level information. Ruby uses Eigenclasses to implement class methods as each of these class methods are defined on the Eigenclass.
 
-A 'class method' in any language is a method in which a class is the receiver - that is the method is directly invoked on the class itself.
+This means that the method is directly invoked on the class itself instead of the instance of the class.
 
 More information in this post:
 
