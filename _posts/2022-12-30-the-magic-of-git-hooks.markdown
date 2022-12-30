@@ -17,6 +17,6 @@ The other thing about Git repositories is that if they are absolutely huge then 
 To get the code base, with commit history, on to your machine you may have to shallow clone and then pull in steps potentially modifying memory requirements and proceed from there.
 
 There is a common problem that you can get with previous sensitive information being committed to a repository, to fix these problems you have to get into the area of rewriting git history, which is something you never want to do. I've had a lot of success with 
-[BFG-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/) for removing sensitive data. To do this simply remove the entire files with BFG cleaner and if they had code in that you need you can add them again.
+[BFG-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/) for removing sensitive data. To do this simply remove the entire files with BFG cleaner and if they had code in that you need you can add them again. The other way to do it is with git filter-branch, which I havent tried.
 
 Make sure you back up your repo!
