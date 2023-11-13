@@ -14,7 +14,7 @@ You use it like:
 {% highlight ruby %}
 
 example_object = ExampleObject.new(args)
-Marshal.dump(example_object)
+example = Marshal.dump(example_object)
 
 {% endhighlight %}
 
@@ -22,7 +22,7 @@ and then load it elsewhere back into your program with:
 
 {% highlight ruby %}
 
-example = Marshal.load(example_object)
+example_object = Marshal.load(example)
 
 {% endhighlight %}
 
