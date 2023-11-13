@@ -14,6 +14,12 @@ I also need to remember Ctrl-e to jump to the end of the line, Ctrl-a to the beg
 
 Also I found forward interactive search with ctrl-s which is the opposite of backward interactive search ctrl-r which I use quite a lot.
 
+The ^ (caret / hat) is used in Regex for negation, for example [^0-9] means match any character that isn't a digit, it has a similar effect in your shell, if you try ls ^Dir it will output the contents of each directory except the specified one.
+
+You can use !! to get back the previous command.
+
+There is also {} which means to expand whatever is inside, it can be used in numerous commands to shortcut part of file or directory names, for example if you have two directories test1 and test2 then you can use mv test{1,2} for tersity.
+
 ### Databases
 
 If you are a Mac user you may be able to use Function-left and Function-right to jump to the end of lines when you are in a Psql session. 
