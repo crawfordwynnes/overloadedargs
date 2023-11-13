@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Marhalling and Serialization in Ruby"
+title:  "Marshalling and Serialization in Ruby"
 date:   2023-11-13 13:30:00 +0100
 categories: jekyll update
 ---
