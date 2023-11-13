@@ -34,7 +34,7 @@ There may be considerations for being able to load the Object between threads or
 
 ### Other formats
 
-Other programming languages have a vaguely similar idea of outputting objects to STDIO so they can be read directly as objects in other programs, for example by redirecting input with `|` which saves disk space. This kind of pattern is following the Unix philosophy of writing small modular programs. However unless your doing something extremely low level then I think it would make more sense to choose an alternative format to serialize to, this could be anything from JSON, XML, TSV, YAML or CSON and many others.
+Other programming languages have a vaguely similar idea of outputting objects to STDIO so they can be read directly as objects in other programs, for example by redirecting output with `|` which saves disk space. This kind of pattern is following the Unix philosophy of writing small modular programs. However unless your doing something extremely low level then I think it would make more sense to choose an alternative format to serialize to, this could be anything from JSON, XML, TSV, YAML or CSON and many others.
 
 ---
 
