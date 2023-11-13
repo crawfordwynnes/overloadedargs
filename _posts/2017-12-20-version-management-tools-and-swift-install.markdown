@@ -6,6 +6,12 @@ categories: jekyll update
 ---
 Tools like RVM, RBenv, Pyenv, NVM and Swiftenv are invaluable when working with different projects. Wayne Seguin was the guy behind RVM, it literally makes Ruby development using the latest or multiple versions simple. You can switch between Rubinius, Ruby and JRuby with ease.
 
+e.g.
+```console
+brew install rustup
+rustup-init
+```
+
 After install, just create a .ruby-version with the name of the Ruby version you want and a .ruby-gemset file with a name for a group of Gem dependencies, if you cd in and out of the directory and switch ruby versions manually using rvm use ruby-1.9.2 for example, when you switch back into the directory it will select the Ruby version for you.
 
 Using the swift versions manager swiftenv is a little trickier, here are some instructions on how to set up a new install of the Swift programming language on Ubuntu 16.04 with the required dependencies:
