@@ -28,7 +28,7 @@ example_object = Marshal.load(example)
 
 For example you can combine this with IO to save your Object to a file, for instance you can, if you needed to, save an Object to disk in a Rails request and then get the restored object between requests.
 
-You can also use it within a Ruby program to load a precomputed Object into memory but this probably would suggest that you need another way to save the Object. I suppose an example of this would be that you wanted your class to initialise a large Object explicitly each time but you didn't want to have to compute it each time
+You can also use it within a Ruby program to load a precomputed Object into memory but this probably would suggest that you need another way to save the Object. I suppose an example of this would be that you wanted your class to initialise a large Object explicitly each time but you didn't want to have to compute it each time.
 
 There may be considerations for being able to load the Object between threads or as you are serializing the data you would end up passing references to a serialized Object which may or may not be more efficient.
 
