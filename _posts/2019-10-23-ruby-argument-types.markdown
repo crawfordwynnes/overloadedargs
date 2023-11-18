@@ -183,6 +183,9 @@ If you call a method that doesn't exist on a class you get a method_missing erro
 
 The gotcha's here are that you should override respond_to_missing?
 
+In Ruby there is also the opportunity to use metaprogramming techniques with const_missing.
+This was suprising to me because because it's a Ruby implementation of using a method that's called after catching an exception.
+
 ### Explicit Return
 
 Explicit return is something pretty simple, it just means that you can use the return keyword instead of letting Ruby return the last value in the buffer of the method. e.g. this is explicit return.

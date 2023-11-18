@@ -8,7 +8,7 @@ The original Gang Of Four, Design Patterns was released in 1994 and it paved the
 
 ## Decorator
 
-Specifically used in Rails to simplify Logic between the Controller and View layers. They can help pass complex objects to the view layers so that there is minimal logic in the views or controllers, the kind of code you may see include wrappers or replacements for helpers that can change the formatting of data ready for display, such as I18N \(internationalization\) helpers. In an abstract form they may be described as one of th V's in MVVC or very loosely part of template engines.
+Specifically used in Rails to simplify Logic between the Controller and View layers. They can help pass data to the view layers so that there is minimal logic in the views or controllers, the kind of code you may see include wrappers or replacements for helpers in Rails that can change the formatting of data ready for display, such as I18N \(internationalization\) helpers. In an abstract form they may be described as one of th V's in MVVC or very loosely part of template engines. Decorators include complex Form objects.
 
 ## Proxy
 
