@@ -179,7 +179,7 @@ https://launchschool.com/blog/mutating-and-non-mutating-methods
 
 Method missing is more of a feature of Ruby and something you can use as a pattern to help you. If you are starting off in Ruby you should try and learn this early on, however getting it rite can be hard because of some other tacets that you need to take into consideration.
 
-If you call a method that doesn't exist on a class you get a method_missing error. (Ruby uses duck typing here to look up the method regardless of it's type, if it's quacks like a duck..) As a programmer you can use this to your advantage and define a method called method_missing. You can use all sorts of tricks and metaprogramming tactics to then call other methods based on the type of values passed in.
+If you call a method that doesn't exist on a class you get a method_missing error. (Ruby uses duck typing here to look up the method regardless of it's type, if it's quacks like a duck..) As a programmer you can use this to your advantage and define a method called method_missing which is called when the method you have called cannot be found. You can use all sorts of tricks and metaprogramming tactics to then call other methods based on the type of values passed in.
 
 The gotcha's here are that you should override respond_to_missing?
 
