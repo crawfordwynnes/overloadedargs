@@ -30,4 +30,4 @@ Let's imagine that a top level class actually needed these getter and setter met
 
 When there are other things to consider such as reducing method chaining, it could be found that trying to consider interface segregation and dependency inversion will be hard. Open-closed principle in Ruby is usually very easy to implement, along with substitution if your subclass defines the same methods as the superclass then the original class should not need to be modified in any way.
 
-Finally just an extra mention that classes should be closed for modification but open for extension.
+Finally just an extra mention that in inheritance classes should be closed for modification but open for extension.
