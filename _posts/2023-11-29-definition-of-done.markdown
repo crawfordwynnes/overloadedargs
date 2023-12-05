@@ -38,6 +38,7 @@ Definition Of Done can include:
   * Do the commits in the branch belong to one commit (e.g. squashed), or has the branch been merged with for example a rebase.
   * Is there adequate documentation for the code or deploying it.
   * Has the code passed CI.
+  * someone from QA has looked at it and agreed it's ok.
   * Is the code of the required quality by passing a style checker etc.
 
 In addition to the amount of work each week from development, it is usual that there would be a wider team meeting, at least every two weeks,and part of this would be to keep the team up to date with the tickets that were about the be released, and to discuss for example, what client that would affect. There could also be quarterly review meetings to keep people informed of how that fit into the roadmap. Some teams also could pick out KPI's for each quarter.
