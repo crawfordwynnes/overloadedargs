@@ -37,3 +37,7 @@ There is also tmux for using separate sessions within one terminal.
 ### Switching windows in Vim
 
 In Vim you can quite easily separate the editor into different sections using horizontal and vertical split using :vsp and :sp. These allow you to compare files more easily. You can switch the focus of these using CMD-SHIFT left and right.
+
+### Visual Studio multi line edit
+
+In Visual Studio you can alt-click on multiple lines to do a multi line text edit, you can also alt-cmd-up and alt-cmd-down to quickly select consecutive lines.
