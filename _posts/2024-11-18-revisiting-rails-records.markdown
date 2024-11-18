@@ -46,7 +46,7 @@ This is especially true if we try and run destructive method calls (usually refe
 
 # Difference between &. and .try
 
-If everything is going well, chances are you've got an object which is suitable for sending through to the view layer. Originally in the Rails world, we had the Rails specific method try, which you could invoke by using a symbol of the method name, like 
+If everything is going well, chances are you've got an object which is suitable for sending through to the view layer. Originally in the Rails world, we had the Rails specific method try, which you could invoke by using a symbol of the method name, like:
 
 ```<%= @object_one.try(:visit).place %>```.
 
