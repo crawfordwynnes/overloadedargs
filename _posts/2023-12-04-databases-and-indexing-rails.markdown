@@ -5,7 +5,7 @@ date:   2023-12-04 16:30:00 +0000
 categories: jekyll update
 ---
 
-This post is all about databases and your persistence layer, we have to mention the majestic monolotith, because if you seperate your apps you will have to manage your migrations in one of the applications. However if you do decide to manage all your migrations from a central application you can just mention it in a Readme and it will become a process that you have to manage. Rails engines are a way split up a code base and still keep it as part of the same application which can make managing migrations a bit easier. Migrations should be able to run all the way up and down without stopping.
+This post is all about databases and your persistence layer, we have to mention the majestic monolith, because if you seperate your apps you will have to manage your migrations in one of the applications. However if you do decide to manage all your migrations from a central application you can just mention it in a Readme and it will become a process that you have to manage. Rails engines are a way split up a code base and still keep it as part of the same application which can make managing migrations a bit easier. Migrations should be able to run all the way up and down without stopping.
 
 # ORM
 
