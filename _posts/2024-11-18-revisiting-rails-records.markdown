@@ -50,7 +50,7 @@ If everything is going well, chances are you've got an object which is suitable 
 
 ```<%= @object_one.try(:visit).place %>```.
 
- The try method in this example is there in case the visit method decides to return nil. It's like saying, please display this attribute to the user if you can, but if visit is nil, catch the exception raised by calling place on it. A bit later Ruby also got this behaviour in the form of the &. operator which does nearly the same as the try method except it will raise a NoMethodError if the subsequent method, in this case place is not implemented.
+ The try method in this example is there in case the visit method decides to return nil. It's like saying, please display this attribute to the user if you can, but if visit is nil, catch the exception raised by calling place on it. A bit later Ruby also got this behaviour in the form of the &. operator which does nearly the same as the try method except it will raise a NoMethodError if the subsequent method, in this case, *place* is not implemented.
 
 # Fetch/dig
 
