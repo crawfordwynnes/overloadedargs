@@ -62,6 +62,7 @@ If we want to do a comparison not including the object_id, we use the normal com
 Why is this all important to understand? It's useful because when writing code we want to avoid situations which result in comparing results and giving incorrect solutions. In practise it dosen't actually happen that much, but in particular focusing on the result of the .nil? method will give you a better understanding:
 
 e.g. 
+
 ``` nil == false => false ```
 
 ``` nil == true => false```
@@ -76,13 +77,13 @@ Sometimes when discussing functions and return results, programmers use the `foo
 
 e.g. 
 
-calling foo with bar returns bar squared
+'calling foo with bar returns bar squared'
 
-or calling foo with bar has no unintended side effects
+'or calling foo with bar has no unintended side effects'
 
-or calling foo with bar calls bar2 with the reference to the function foo, creates an asynchronous Promise,
+'or calling foo with bar calls bar2 with the reference to the function foo, creates an asynchronous Promise'
 
-any combination of foo and bar can be used.
+Any combination of foo and bar can be used.
 
 # !!
 
