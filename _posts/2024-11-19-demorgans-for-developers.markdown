@@ -38,7 +38,7 @@ The Equivalence operation is interesting to consider when working with Logic bec
 
 `(w == x && y == z)`
 
-we could easily think that the && represented equivalence. We would need to look a bit more closely at what was happening here in terms of Logic. In this case if w == x evaluates to true AND y == z evaluates to true then the statement would be satisfied. 
+We could easily think that the && represented equivalence. We would need to look a bit more closely at what was happening here in terms of logic. In this case if w == x evaluates to true AND y == z evaluates to true then the statement would be satisfied. 
 
 Actual equivalence is slightly more complicated, to get equivalence we would also want the comparisons 
 to be true if both sides of the statement were the same, this includes the comparison when the statement is reduced to false == false.
