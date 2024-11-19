@@ -81,7 +81,7 @@ e.g.
 
 'or calling foo with bar has no unintended side effects'
 
-'or calling foo with bar calls bar2 with the reference to the function foo, creates an asynchronous Promise'
+'or calling foo with bar calls bar2 with the reference to the function foo, which creates an asynchronous Promise'
 
 Any combination of foo and bar can be used.
 
