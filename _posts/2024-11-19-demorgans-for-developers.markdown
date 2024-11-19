@@ -22,7 +22,7 @@ as well as,
 
 `unless (x == y && b == c)`
 
-these when refactored would be changed to 
+these when refactored would be changed to:
 
 `if (x != y || b != c)`
 
