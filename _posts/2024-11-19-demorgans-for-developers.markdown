@@ -51,11 +51,9 @@ which would give us true when we used statements that either evaluate to *both* 
 
 # JavaScript Comparisons
 
-In JavaScript it is well known that there are two operators for comparison, We have the 
+In JavaScript it is well known that there are two operators for comparison, We have the `===` operator, which checks not only that the values of the objects are the same but also the objects themselves. In Ruby, we can get object ids, by using the `object_id` method, Ruby used the `===` operator in `when` clauses, also named *case subsumtion* operator.
 
-`===` operator, which checks not only that the values of the Objects are the same but also the Objects themselves. In Ruby, we can get object ids, by using the `object_id` method, Ruby used the `===` operator in `when` clauses, also named *case subsumtion* operator.
-
-If we want to do a comparison not including the object_id, we use the normal comparison operator, but in JavaScript most of the time we do want to use the `===` operator (strict comparison, without type comparisons) to avoid incorrect comparisons.
+If we want to do a comparison not including the object_id, we use the normal comparison operator, but in JavaScript most of the time we do want to use the `===` operator (strict comparison, without type conversions) to avoid incorrect comparisons.
 
 # Nils
 
