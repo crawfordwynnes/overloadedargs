@@ -5,7 +5,7 @@ date:   2024-11-19 12:00:00 +0000
 categories: jekyll update
 ---
 
-Augustus De Morgan was a British Mathematician and Logician, known for De Morgan's Laws used in Computer Science among other fields. His first paper was called "On the structure of the syllogism" in 1846 and he later wrote "Formal Logic", published in 1847. De Morgan's friend George Boole released on the same day "The Mathematical Analysis of Logic" which would at the time be much more important than De Morgan's work.
+Augustus De Morgan was a British Mathematician and Logician, known for De Morgan's Laws used in Computer Science among other fields. His first paper was called "On The Structure Of The Syllogism" in 1846 and he later wrote "Formal Logic", published in 1847. De Morgan's friend George Boole released on the same day "The Mathematical Analysis of Logic" which would at the time be much more important than De Morgan's work.
 
 Through reading De Morgan's Laws, and their numerous interpretations in different areas, for example set theory or logic, there is one which stands out relating to conjunction, disjunction and negation. It states in English:
 
@@ -43,7 +43,7 @@ We could easily think that the && represented equivalence. We would need to look
 Actual equivalence is slightly more complicated, to get equivalence we would also want the comparisons 
 to be true if both sides of the statement were the same, this includes the comparison when the statement is reduced to false == false.
 
-To get equivalence we can use the Xor operator so we get:
+To get equivalence we can use the Xor operator with negation, also known as Xnor so we get:
 
 `!(false ^ false)`
 

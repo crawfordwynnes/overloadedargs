@@ -41,3 +41,9 @@ In Vim you can quite easily separate the editor into different sections using ho
 ### Visual Studio multi line edit
 
 In Visual Studio you can alt-click on multiple lines to do a multi line text edit, you can also alt-cmd-up and alt-cmd-down to quickly select consecutive lines.
+
+### A shortcut for cleaning up remote branches
+
+```git push origin :branch_name```
+
+Using the above including the : will delete the remote branch so be careful.
