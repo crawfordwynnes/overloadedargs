@@ -9,7 +9,7 @@ This is a quick post about the use of enums in Rails. The main point of it is to
 
 An Enum declaration in C:
 
-```enum State {Working = 1, NotWorking = 0}; ```
+```enum State {Working = 1, UnpaidTaxes = 0}; ```
 
 ## Enums in Rails
 
