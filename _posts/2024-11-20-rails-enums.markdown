@@ -13,7 +13,7 @@ An Enum declaration in C:
 
 ## Enums in Rails
 
-Rails introduced enums, way back in Rails 3, the first step is to declare a migration to store the integer value of your enum in the database:
+Rails introduced enums, way back in Rails 4.1, the first step is to declare a migration to store the integer value of your enum in the database:
 
 ```bundle exec rails g migration AddStatusToPost status:integers```
 
