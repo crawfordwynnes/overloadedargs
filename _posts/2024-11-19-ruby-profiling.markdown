@@ -39,9 +39,12 @@ e.g.
 def complex_operation(r)
   long_running_method(r)
 end
+
 x = 2
+
 complex_operation(2)
 z = _
+
 ```
 
 and you will get the result of complex_operation(2) in z.
