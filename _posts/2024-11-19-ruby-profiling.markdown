@@ -18,7 +18,7 @@ The most simple way to look at the time it takes to run your code is to choose p
 The default debugging tool in ruby is called debugger, you can get access to it by doing a require 'debug', and then at the place where you are interested in squashing that bug you simply add the `debugger` statement. At this point you would consider that it would be quite similar to adding a breakpoint in the browser inspector in your JS code. Once you enter the debugger it will go through the Ruby call stack so you can figure out what's going on, usually you press n to go to the next statement and c to continue on with the current program or to the next debugger statement. 
 
 The recommended debugger for Ruby is not in fact the debugger shipped with Ruby, it is pry-byebug. In fact most
-applications use the Pry Gem on int's own, and instead of the debugger statement you can use binding.pry to enter debugging mode at a certain point.
+applications use the Pry Gem on it's own, and instead of the debugger statement you can use binding.pry to enter debugging mode at a certain point.
 
 ## .irbrc
 

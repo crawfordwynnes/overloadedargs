@@ -5,7 +5,7 @@ date:   2022-08-30 10:45:00 +0000
 categories: jekyll update
 ---
 
-This post is more of a historical post about a feature in Ruby that has some nuances that were talked about a long time ago. They aren't really that important unless you are writing code whice is doing a deep dive into specific behaviours of Ruby Proc and Lambda.
+This post is more of a historical post about a feature in Ruby that has some nuances that were talked about a long time ago. They aren't really that important unless you are writing code which is doing a deep dive into specific behaviours of Ruby Proc and Lambda.
 
 Before we start let's remind ourselves what are Proc and Lambda and what can we do with them.
 

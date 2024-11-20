@@ -34,7 +34,7 @@ this would be important when refactoring out large nested if statements, the `un
 
 # Equivalency
 
-The Equivalence operation is interesting to consider when working with Logic because it can easily be confused with the AND operation. For example in the statement:
+The Equivalence operation is interesting to consider when working with logic because it can easily be confused with the AND operation. For example in the statement:
 
 `(w == x && y == z)`
 
