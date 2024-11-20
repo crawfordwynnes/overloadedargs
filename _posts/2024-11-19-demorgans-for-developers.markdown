@@ -30,7 +30,7 @@ It would be a mistake to convert the top statements into:
 
 `if (x != y && b != c)`
 
-this would be important when refactoring out large nested if statements, the `unless` adds additional complexity, which is why some people and style checkers attempt to minimise it's use.
+this would be important when refactoring out large nested if statements, as you want to remove the negation in the outside bracket so you can isolate and move the inner conditionals. The `unless` adds additional complexity, which is why some people and style checkers attempt to minimise it's use.
 
 # Equivalency
 

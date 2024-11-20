@@ -51,6 +51,12 @@ Previously mentioned was that there could be problems if you don't set your enum
 You can do this by including the integer with the label for the enum status:
 ```enum :status, [ draft: 1, live: 2, archived: 3, pre_live: 4 ]```
 
+The situation you really want to avoid is updating your original enum to:
+
+```enum :status, [ :draft, :live, pre_live, :archived ]```
+
+because then all your previously archived data will become pre_live.
+
 This is especially in the case of a Developer working on a new feature and testing it all fully, but not realising that the states were different on the live database. This would save you the extra headache of having to go in afterwards and either write data migrations or SQL updates based on date in case you accidently released the new feature to the customer. You can use any integers for each state if you want.
 
 Once enums are setup correctly, you can directly use the enum in ActiveRecord lookups:
