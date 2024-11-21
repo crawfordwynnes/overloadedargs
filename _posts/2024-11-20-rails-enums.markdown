@@ -49,6 +49,7 @@ This would rely on other programmers knowing that they were not supposed to call
 Previously mentioned was that there could be problems if you don't set your enums up properly, so is the enum declaration above not correct? Well yes it is, and it will work but there is an extra step if you want to ensure your not making some extra work for yourself later on. The problem is that sometimes customer and clients make requests for extra features, and suddenly you've got to add an extra state which is represented by the order that the states progress. For example you may need a pre_live state. At this point for general good house-keeping and data understandability you would want draft to be 1, pre_live to be 2, live to be 3 and archived to be 4. If the system has already been live, then your database is going to contain a load of state: 2 and 3, for live and archived. If you added the extra pre_live state on the end then, all new pre_live states would need to be represented by 4, which is ok as long as you remember that 4 represented pre live. If you don't include the integer matches for each of the enum states then your probably going to get some issues because you can forget what each state was.
 
 You can do this by including the integer with the label for the enum status:
+
 ```enum :status, [ draft: 1, live: 2, archived: 3, pre_live: 4 ]```
 
 The situation you really want to avoid is updating your original enum to:

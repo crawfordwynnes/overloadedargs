@@ -33,7 +33,7 @@ then you can add:
    belongs_to :post, counter_cache: true
 ```
 
-Rails will increment the counter cache when a new child record is created, and will also decrement the count when a record is destroyed. In this way, the count is cached and does not need to be recalculated each time your running complex SQL queries, which can take a very long time for very large data sets. 
+Rails will increment the counter cache when an associated record is created, and will also decrement the count when a record is destroyed. In this way, the count is cached and does not need to be recalculated each time your running complex SQL queries, which can take a very long time for very large data sets. 
 
 One of the main reasons for this article is to give an example of this simple optimisation which can reduce the load on your database but there is one caveat, and that is that the counter caches are not always accurate. This is important because even if you didn't have a requirement for completely accuracy, the counter caches can become out of sync. In this way the counter caches can drift and give you incorrect indications for data which are not a valid representation of your data.
 
