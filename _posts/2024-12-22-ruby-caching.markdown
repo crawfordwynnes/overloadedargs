@@ -20,7 +20,7 @@ class PerimeterCalculator
   end
 
   def perimeter(width, height)
-    @cache[width*height] ||= calculate_perimeter(width, height)
+    @cache[width][height] ||= calculate_perimeter(width, height)
   end
 end
 
