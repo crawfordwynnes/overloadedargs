@@ -219,19 +219,25 @@ The idea here is not to test the environment configuration but that your UAT env
 
 ### An RSpec Test with a tag
 
+```
 it "RSpec test with a tag", :focus => true do; end
+```
 
-to run all tests with that tag use rspec . --tag focus
+to run all tests with that tag use `rspec . --tag focus`
 
 ## An RSpec Test for one specific spec or context
 
-rspec spec/examples/user_spec: 32    
+```
+rspec spec/examples/user_spec: 32
+```    
 
 which would point to a describe line or within.
 
 this can also be used for contexts:
 
-rspec spec/examples/user_spec: 28  
+```
+rspec spec/examples/user_spec: 28
+```
 
 which will run all specs within that context.
 
