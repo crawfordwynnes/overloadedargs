@@ -225,7 +225,7 @@ it "RSpec test with a tag", :focus => true do; end
 
 to run all tests with that tag use `rspec . --tag focus`
 
-## An RSpec Test for one specific spec or context
+### An RSpec Test for one specific spec or context
 
 ```
 rspec spec/examples/user_spec: 32
