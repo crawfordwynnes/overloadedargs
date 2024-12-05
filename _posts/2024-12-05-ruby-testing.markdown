@@ -99,15 +99,15 @@ the above will create variables in your RSpec so you can test with them,
   end
 ```
 
-with a normal let the expectation_result variable will only be built when it is called, because RSpec uses
-let to lazy evaluate the data in the test suite.
+with a normal `let` the expectation_result variable will only be built when it is called, because RSpec uses
+`let` to lazy evaluate the data in the test suite.
 
 Instead with let!
 ```
   let!(:expectation_result { [:201, "Created"] })
 ```
 
-The most typical use case for a let! is that your creating a factory that contains test data that needs to be called. 
+The most typical use case for a `let!` is that your creating a factory that contains test data that needs to be called. 
 
 The most obvious example to understand is:
 
@@ -126,7 +126,7 @@ This case would look like:
   end
 ```
 
-The person running the test would assume that the user factory created in the second let had associated the cart_info to it, but because we are using let, this didn't happen. To get around this problem if we want to use complex factories with associations we need to make sure that the second let is called. 
+The person running the test would assume that the user factory created in the second `let` had associated the cart_info to it, but because we are using `let`, this didn't happen. To get around this problem if we want to use complex factories with associations we need to make sure that the second let is called. 
 
 What we would need to do is to change:
 
@@ -139,9 +139,9 @@ to:
 ```
   let!(:user_with_association) { create(:user, cart_info: cart_info )}
 ```
-so that it is not lazyily evaluated, and probably we would change the first let to a let! also for consistency.
+so that it is not lazyily evaluated, and probably we would change the first `let` to a `let!` also for consistency.
 
-Apparently let on it's own also returns the memoized value, so atleast you know that let will return a consitent value.
+Apparently `let` on it's own also returns the memoized value, so atleast you know that `let` will return a consitent value.
 
 ## Style & Not Nesting Context
 
