@@ -14,7 +14,7 @@ Black Box Testing is testing a class without looking into it, like a black box. 
 Out of all of the testing techniques, why does black box testing stand out as a good technique? It seems obvious right, you just take a class, only observe what it outputs and test against those expectations.
 Doing it this way says; I'm not going to care about they way you implement this method, even I'm not completely sure what my class structure should be.
 
-In Ruby it's basically stating let's not look into the code and create mock objects in the tests which are duplicating the logic in the code. The idea is to reduce coupling between classes, and from the outset it seems counter-intuitive. 
+In Ruby it's basically stating let's not look into the code and not create mock objects in the tests which are duplicating the logic in the code. The idea is to reduce coupling between classes, and from the outset it seems counter-intuitive. 
 
 Surely we need test objects which isolate classes to reduce coupling. Black Box testing works well, when classes and their interfaces are designed well. 
 
