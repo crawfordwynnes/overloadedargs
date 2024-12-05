@@ -61,7 +61,7 @@ specs with different types of expectations:
   end
 ```
 
-## Difference Between Expect And Allow.
+## Difference Between Expect And Allow
 
 Expect and Allow are both additional behaviour that you can add to your objects to isolate your method calls in testing. Once expect is attached to an object and called with something it will only pass if that method definately receives that message call. Allow is different and a spec can pass even if that message call was not received. Allow is used when we want to stub a method call but we are not interested in knowing that the method was called, usually to test an additional line in a method that is not the focus of the test, or to advance a test that would otherwise not know what to do with the save_cart_abandoned_stat if @cart was a Double.
 
