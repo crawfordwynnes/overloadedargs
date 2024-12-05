@@ -30,7 +30,7 @@ end
 
 then you can add:
 ```
-   belongs_to :post, counter_cache: true
+  belongs_to :post, counter_cache: true
 ```
 
 Rails will increment the counter cache when an associated record is created, and will also decrement the count when a record is destroyed. In this way, the count is cached and does not need to be recalculated each time your running complex SQL queries, which can take a very long time for very large data sets. 

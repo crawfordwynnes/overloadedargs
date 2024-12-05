@@ -19,21 +19,21 @@ Elastisearch allows you define types of data that you want to search over, and t
 So if you wanted to search by name for something and you added it to your database, then you would need to reindex your data after that data was added to your database. Reindexing is usually quite an expensive operation so it's something you *can* do when your application is not busy. 
 
 Anyway the problem that this post refers to is one, where similarlily to elastisearch, you do need to preprocess your data. It differs in the way that when the data is updated there should be an easy solution for non tech people to update the data.
+
 One of the easiest way of allowing this is by using a text file, so someone can go in and add or remove data from it, or upload a file of some description.
+
 Using a text file allows a user to completely replace the entire file on a whim, so imagine an entire data file that can fit in Ruby memory.
+
 The file also needs preprocessing in terms of sorting the data. The preprocessing in this way also validates that the data is sorted; because every time it is copied into the system it is sorted, 
 Although, this is more expensive than keeping the text file sorted.
 
-An optimal solution is to attempt to keep the text file as sorted as possible, to minimize the ammount of time it requires to sort the file,
-which would need to be communicated to stakeholders. A rake task and documentation can always help.
+An optimal solution is to attempt to keep the text file as sorted as possible, to minimize the ammount of time it requires to sort the file, which would need to be communicated to stakeholders. A rake task and documentation can always help.
 
 ## Spaceship Operator
 
 What is the spaceship operator `<=>`, and how can it be used for search? It's best described with an example:
 
-The spaceship operator used on it's own can return one of three values, depending on the result of the comparison,
-so it can be -1, 0 or 1; if it's less than, equal or greater than. It applies to integers, strings and any object
-where the <=> is implemented. 
+The spaceship operator used on it's own can return one of three values, depending on the result of the comparison, so it can be -1, 0 or 1; if it's less than, equal or greater than. It applies to integers, strings and any object where the <=> is implemented. 
 
 ```
 For Integers:
@@ -51,22 +51,15 @@ For Strings:
 "ABC" <=> "abc" #=> -1   (capitals makes it less than)
 ```
 
-The `<=>` is the three way comparison operator, and we can override any of the operators in Ruby, for example, if we want to use
-custom behaviour where a string of capitals is less than a lowercase string. However for this
+The `<=>` is the three way comparison operator, and we can override any of the operators in Ruby, for example, if we want to use custom behaviour where a string of capitals is less than a lowercase string. However for this
 example we don't actually need to provide custom behaviour, because the important thing is that the
-`<=>` gives us an ordering, it's not actually necessary to have a fully correct ordering to create a Log(n) search, 
-the important thing is that the ordering is there.
+`<=>` gives us an ordering, it's not actually necessary to have a fully correct ordering to create a O(Log(n)) search, the important thing is that the ordering is there.
 
-This is slightly different to method overloading, where you specify many of the same name functions with different parameters,
-which is used in C++. Method overriding simply invovles overriding a method which is specified in a subclass.
-The idea here is to give an ordering to strings, so that when they are sorted we can use an Log(n) lookup on the list to find out 
-if the key exists. Normally we can use the .include? method in Ruby, but that would iterate over the entire list and be O(n).
-The point of the Log(n) search is important for large lists, and takes advantage of entropy from Claud Shannon. To improve the speed of
-the lookups we take advantage of the structure of the data instead of increasing space complexity.
+This is slightly different to method overloading, where you specify many of the same name functions with different parameters, which is used in C++. Method overriding simply invovles overriding a method which is specified in a subclass.
 
-Luckily in Ruby we have a method which can take advantage of our sorted data, it's called bsearch and the way it works
-internally, using binary search it checks the middle key and determines the outcome of the comparison, if it's -1, go to the left
-midway point and if it's 1 go to the right midway point. 
+The idea here is to give an ordering to strings, so that when they are sorted we can use an O(Log(n)) lookup on the list to find out if the key exists. Normally we can use the .include? method in Ruby, but that would iterate over the entire list and be O(n). The point of the O(Log(n)) search is important for large lists, and takes advantage of entropy from Claude Shannon. To improve the speed of the lookups we take advantage of the structure of the data instead of increasing space complexity.
+
+Luckily in Ruby we have a method which can take advantage of our sorted data, it's called `bsearch` and the way it works internally, using binary search it checks the middle key and determines the outcome of the comparison, if it's -1, go to the left midway point and if it's 1 go to the right midway point. 
 
 It would look like this, from the docs:
 
@@ -89,7 +82,7 @@ This comes in the form of:
 @instance_var ||= computed_value
 ```
 
-Except in this case we are going to use class variables.
+Except in this case we are going to use class variables:
 
 ```
 @@computed_list ||= sorted_list
@@ -97,8 +90,7 @@ Except in this case we are going to use class variables.
 
 Using class variables with ||= means that any class that uses this method will return the cached version of
 the list. This means that it's not just the instance of the class that can cache the memoized value. This is
-important for systems that share the sorted_list across people that are accessing the server using that Ruby process, which can
-greatly improve speed for applicaitons with many users.
+important for systems that share the sorted_list across people that are accessing the server using that Ruby process, which can greatly improve speed for applicaitons with many users.
 
 ## What Slows Down Data Lookups
 

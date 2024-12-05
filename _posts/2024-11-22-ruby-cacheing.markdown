@@ -15,7 +15,6 @@ Part of the confusion can come from the fact that you can give different paramet
 
 ```
 class PerimeterCalculator
-
   def initialize
     @cache = {}
   end
@@ -38,7 +37,7 @@ In the case where:
 x = false
 
 (1..10).each do |y|
-   x ||= y == 5
+  x ||= y == 5
 end
 
 x => true
