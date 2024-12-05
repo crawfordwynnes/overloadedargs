@@ -5,8 +5,6 @@ date:   2024-12-05 11:30:00 +0000
 categories: jekyll update
 ---
 
-## Ruby Testing
-
 This is an overview of testing techniques for Ruby, if you've not seen them before or if your getting back into testing, don't worry, but it's pretty ancient stuff now. The general ideas are transferrable to other languages including Node.
 
 ## Black Box Testing
@@ -63,7 +61,7 @@ specs with different types of expectations:
   end
 ```
 
-### Difference between expect and allow.
+## Difference Between Expect And Allow.
 
 Expect and Allow are both additional behaviour that you can add to your objects to isolate your method calls in testing. Once expect is attached to an object and called with something it will only pass if that method definately receives that message call. Allow is different and a spec can pass even if that message call was not received. Allow is used when we want to stub a method call but we are not interested in knowing that the method was called, usually to test an additional line in a method that is not the focus of the test, or to advance a test that would otherwise not know what to do with the save_cart_abandoned_stat if @cart was a Double.
 
@@ -145,7 +143,7 @@ so that it is not lazyily evaluated, and probably we would change the first let 
 
 Apparently let on it's own also returns the memoized value, so atleast you know that let will return a consitent value.
 
-## Style & Not nesting context
+## Style & Not Nesting Context
 
 Most people who use RSpec a lot are quite strongly opinionated not to nest multiple contexts, to reduce deep nesting and to make specs more readable:
 
@@ -212,14 +210,14 @@ describe "fooooobar" do
 end
 ```
 
-## Multi Env Tests (qa, uat)
+### Multi Env Tests (qa, uat)
 
 I've never seen multi env tests before in an application, but it's just one of those strange ideas that may or may not happen.
 
 It's a little bit more than, let's just run the BDD tests on the UAT environment only. 
 The idea here is not to test the environment configuration but that your UAT environment may have better test data in it's database. If your using a lot of factories then it won't even be a consideration, but I like to build some tests top down with integration testing, this can reduce the amount of mocks and stubs you use but couple you to the bahviour in another class, so it can be a consideration. You can easily tag tests in RSpec if you want to have custom behaviour, you can use guard to run your tests every time you save and you can also run individual specs by giving a specific line number to the test.
 
-## An RSpec Test with a tag
+### An RSpec Test with a tag
 
 it "RSpec test with a tag", :focus => true do; end
 
