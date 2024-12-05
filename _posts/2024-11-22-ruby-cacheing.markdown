@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Ruby Caching"
+title:  "Ruby Cacheing"
 date:   2024-11-22 17:30:00 +0000
 categories: jekyll update
 ---
 
-I'm going to use this post to build up slowly the idea of caching in Ruby, I've got it wrong in the past and not thought about it properly, so perhaps if you read to the end of this post you will have a better idea of what's actually going on when you see some code that uses the Or-Equals `||= operator`.
+I'm going to use this post to build up slowly the idea of cacheing in Ruby, I've got it wrong in the past and not thought about it properly, so perhaps if you read to the end of this post you will have a better idea of what's actually going on when you see some code that uses the Or-Equals `||= operator`.
 
 First of all, what does it mean to use the `||= operator`. Well it means please *assign a value to the left, the value on the right if the value on the left is nil.* That's basically it, there is no magic things going on here. The problem arrises when it is claimed that the `||= operator` can be used for caching, because automatically a Ruby Developer would think that if I use `||=` I will get caching, and caching in this way would refer to the fact, please assign a value to the left, the value on the right if the value has *changed*, but don't run the long running query (the part to be cached on the right) if we already have a value. So does using the `||= operator` make sense or not? To fully get to grips with this we have to take a step back and say, whilst this class is available, with params or not, is the result of the complex operation going to be the *same* every single time. 
 

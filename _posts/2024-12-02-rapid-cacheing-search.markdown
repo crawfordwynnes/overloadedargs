@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Rapid Caching Search"
+title:  "Rapid Cacheing Search"
 date:   2024-12-02 18:30:00 +0000
 categories: jekyll update
 ---
@@ -15,8 +15,8 @@ It's also worth considering Redis for simplifying search problems as it will giv
 
 One of the easiest go to techniques for solving search problems in Web Applications is Elastisearch.
 Elastisearch allows you define types of data that you want to search over, and then gives you easy to use rake tasks for indexing that data.
-So if you wanted to search by name for something and you added it to your database, then you would need to reindex your data after that data was added to your database. 
-Reindexing is usually quite an expensive operation so it's something you *can* do when your application is not busy. 
+
+So if you wanted to search by name for something and you added it to your database, then you would need to reindex your data after that data was added to your database. Reindexing is usually quite an expensive operation so it's something you *can* do when your application is not busy. 
 
 Anyway the problem that this post refers to is one, where similarlily to elastisearch, you do need to preprocess your data. It differs in the way that when the data is updated there should be an easy solution for non tech people to update the data.
 One of the easiest way of allowing this is by using a text file, so someone can go in and add or remove data from it, or upload a file of some description.
