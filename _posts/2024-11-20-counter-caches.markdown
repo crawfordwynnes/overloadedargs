@@ -24,7 +24,7 @@ You would start with a migration like:
 
 ```
 change_table :posts do |t|
-    t.integer :comments_count, default: 0
+  t.integer :comments_count, default: 0
 end
 ```
 
