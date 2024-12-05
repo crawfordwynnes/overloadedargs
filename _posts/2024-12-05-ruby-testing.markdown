@@ -63,7 +63,9 @@ specs with different types of expectations:
 
 ## Difference Between Expect And Allow
 
-Expect and Allow are both additional behaviour that you can add to your objects to isolate your method calls in testing. Once expect is attached to an object and called with something it will only pass if that method definately receives that message call. Allow is different and a spec can pass even if that message call was not received. Allow is used when we want to stub a method call but we are not interested in knowing that the method was called, usually to test an additional line in a method that is not the focus of the test, or to advance a test that would otherwise not know what to do with the save_cart_abandoned_stat if @cart was a Double.
+Expect and Allow are both additional behaviour that you can add to your objects to isolate your method calls in testing. Once expect is attached to an object and called with something it will only pass if that method definately receives that message call. Allow is different and a spec can pass even if that message call was not received.
+
+Allow is used when we want to stub a method call but we are not interested in knowing that the method was called, usually to test an additional line in a method that is not the focus of the test, or to advance a test that would otherwise not know what to do with the save_cart_abandoned_stat if @cart was a Double.
 
 ## Pure Functions
 
@@ -102,7 +104,8 @@ the above will create variables in your RSpec so you can test with them,
 with a normal `let` the expectation_result variable will only be built when it is called, because RSpec uses
 `let` to lazy evaluate the data in the test suite.
 
-Instead with let!
+Instead with `let!`:
+
 ```
   let!(:expectation_result { [:201, "Created"] })
 ```
@@ -141,7 +144,7 @@ to:
 ```
 so that it is not lazyily evaluated, and probably we would change the first `let` to a `let!` also for consistency.
 
-Apparently `let` on it's own also returns the memoized value, so atleast you know that `let` will return a consitent value.
+Apparently `let` on it's own also returns the memoized value, so atleast you know that `let` will return a consistent value.
 
 ## Style & Not Nesting Context
 
