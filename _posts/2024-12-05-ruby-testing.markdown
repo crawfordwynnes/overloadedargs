@@ -18,7 +18,7 @@ In Ruby it's basically stating let's not look into the code and create mock obje
 
 Surely we need test objects which isolate classes to reduce coupling. Black Box testing works well, when classes and their interfaces are designed well. 
 
-For example if you've ever tried to test a class with a line of code with multiple demeter violations, e.g. long.extra.methods then you will find very quickly that you have to specifically test in your code for each of these methods and return a value for each of these method calls, unless you go for more of an integration testing approach, which can make your factories very complicated. To do Black Box testing well we wan't to isolate our classes in our tests and not create really complex tests that create test objects that are looking into our code.
+For example if you've ever tried to test a class with a line of code with multiple demeter violations, e.g. long.extra.methods then you will find very quickly that you have to specifically mock the method calls for each of these and return a value which has the next mock call on it, unless you go for more of an integration testing approach, which can make your factories very complicated. To do Black Box testing well we wan't to isolate our classes in our tests and not create really complex tests that create test objects that are looking into our code.
 
 The following are the techniques that we can use to try to decrease coupling in our integration tests and decrease coupling between the test suite and code in black box testing:
 
