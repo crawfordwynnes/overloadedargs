@@ -46,7 +46,7 @@ x => true
 
 x can become true. It's the same if x was initially nil. This example is a bit contrived because, if you initially set x to anything else, e.g. 1, 4, 5, 6, "a" or anything that isn't nil or false then x will remain that value.
 
-Hopefully this post has given you a bit more of an insight into why it may not just be easy to cache the result of an API query with `||=`. This is why in Rails we have fuller caching mechanisms like:
+Hopefully this post has given you a bit more of an insight into why it may not just be easy to cache the result of an API query with `||=`. This is why in Rails we have fuller cacheing mechanisms like:
 
 ```
 def api_result
@@ -56,6 +56,6 @@ def api_result
 end
 ```
 
-These give you a bit more functionality in terms of caching, because these caches have expiry mechanisms.
+These give you a bit more functionality in terms of cacheing, because these caches have expiry mechanisms.
 
 After all the two hardest things in Computer Science, are cache invalidation and naming things.

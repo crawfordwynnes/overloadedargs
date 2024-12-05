@@ -78,9 +78,9 @@ a = ["aa", "ab", "ac", "acc", "attt"].sort
 a.bsearch {|x| p x; x <=> "attt"}
 ```
 
-## Class Caching
+## Class Cacheing
 
-The second specific Ruby mechanism that we can use here is class caching. This takes advantage of something 
+The second specific Ruby mechanism that we can use here is class cacheing. This takes advantage of something 
 that we have seen with memoization. 
 
 This comes in the form of:
@@ -103,10 +103,6 @@ greatly improve speed for applicaitons with many users.
 ## What Slows Down Data Lookups
 
 One of the main problems with using this kind of pattern is that it relies on the data actually being able
-to fit in a Ruby Object, beyond that it would make a lot more sense to allow the database to do the heavy lifting
-because that's what the database engine it is designed to do.
+to fit in a Ruby Object, beyond that it would make a lot more sense to allow the database to do the heavy lifting because that's what the database engine it is designed to do.
 
-It's kind of like when you consider your optimisation and pull a certain amount of data out of the database and then use Ruby
-to iterate on the result instead of having to write very complex SQL, even if your putting that SQL into the codebase without
-ActiveRecord. It's a balance, but hopefully if you read to the end of this you will see that the `<=>` operator can be
-very useful for certain applications.
+It's kind of like when you consider your optimisation and pull a certain amount of data out of the database and then use Ruby to iterate on the result instead of having to write very complex SQL, even if your putting that SQL into the codebase without ActiveRecord. It's a balance, but hopefully if you read to the end of this you will see that the `<=>` operator can be very useful for certain applications.
