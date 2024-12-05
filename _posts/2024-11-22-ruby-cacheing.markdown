@@ -50,9 +50,9 @@ Hopefully this post has given you a bit more of an insight into why it may not j
 
 ```
 def api_result
-    Rails.cache.fetch("#{cache_key_with_version}/api_endpoint", expires_in: 12.hours) do
-      UserInfo::API.paginated_user_music_likes(self.id)
-    end
+  Rails.cache.fetch("#{cache_key_with_version}/api_endpoint", expires_in: 12.hours) do
+    UserInfo::API.paginated_user_music_likes(self.id)
+  end
 end
 ```
 
